@@ -5,91 +5,91 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="headerPart">
-      <nav class="topNav">
-          <button class="topNav__close" type="button">X</button>
-          <ul class="topNav__menu menu">
-            <li class="menu__item"><a href="#">Главная</a></li>
-            <li class="menu__item"><a href="#">Фото и видео</a></li>
-            <li class="menu__item"><a href="#">Форма отзыва</a></li>
-            <li class="menu__item"><a href="#">HTML ACADEMY</a></li>
+    <header class="header-part">
+      <nav class="top-nav">
+          <button class="top-nav__close" type="button">X</button>
+          <ul class="top-nav__menu menu">
+            <li class="menu__item"><a href="index.html">Главная</a></li>
+            <li class="menu__item"><a href="photo.html">Фото и видео</a></li>
+            <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
+            <li class="menu__item"><a target="_blank" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
-          <a href="#" class="topNav__logoLink">
-          <img src="http://placehold.it/102x83" alt="" class="topNav__logoPic"></a>
-          <button class="topNav__burger" type="button">Бургер-кнопка</button>
-          <img class="topNav__welcomePic" src="http://placehold.it/320x390" alt="Welcome" >
+          <a href="#" class="top-nav__logoLink">
+          <img src="http://placehold.it/102x83" alt="" class="top-nav__logo-pic"></a>
+          <button class="top-nav__burger" type="button">Бургер-кнопка</button>
+          <img class="top-nav__welcome-pic" src="http://placehold.it/320x390" alt="Welcome" >
       </nav>
     </header>
-    <main class="mainPart">
-      <section class="mainPart__welcome">
-         <h1 class="welcome__title TitleMod">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
-          <p class="welcome__discription discriptionMod">
+    <main class="main-part">
+      <section class="welcome">
+         <h1 class="welcome__title title-mod">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="welcome__discription discription-mod">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
       </section>
-      <section class="mainPart__userForm">
-        <form action="https://echo.htmlacademy.ru" class="userForm">
-          <label class="userForm_nameLabel">
-            Имя*:<input class="userForm_nameInput" type="text" name="username" placeholder="Петр">
+      <section class="user-form">
+        <form action="https://echo.htmlacademy.ru" class="user-form">
+          <label class="user-form_nameLabel">
+            Имя*:<input class="user-form__name-input" type="text" name="username" placeholder="Петр">
           </label>
-          <label class="userForm_sonameLabel">
-            Фамилия*:<input class="userForm_usersonameInput" type="text" name="soname" placeholder="Иванов">
+          <label class="user-form__soname-label">
+            Фамилия*:<input class="user-form__usersoname-input" type="text" name="soname" placeholder="Иванов">
           </label>
-          <label class="userForm_patronymicLabel">
-            Фамилия*:<input class="userForm_patronymicInput" type="text" name="patronymic" placeholder="Александрович">
+          <label class="user-form__patronymic-label">
+            Фамилия*:<input class="user-form__patronymic-input" type="text" name="patronymic" placeholder="Александрович">
           </label>
-          <div class="userForm__border"></div>
-          <h1 class="userForm__title">Контактная информация:</h1>
-          <label class="userForm__contactText">
-            Контактный телефон*: <input type="tel" class="contactInput phoneImg" placeholder="Введите телефон">
+          <div class="user-form__border"></div>
+          <h1 class="user-form__title">Контактная информация:</h1>
+          <label class="user-form__contact-text">
+            Контактный телефон*: <input type="tel" class="contact-input phone-img" placeholder="Введите телефон">
           </label>
-          <label class="userForm__contactText">
-            Электронная почта*: <input type="tel" class="contactInput emailImg" placeholder="Введите e-mail">
+          <label class="user-form__contactText">
+            Электронная почта*: <input type="tel" class="contact-input email-img" placeholder="Введите e-mail">
           </label>
-          <div class="userForm__border"></div>
-          <h1 class="userForm__title">Ваше общее впечатление:</h1>
-          <label class="userForm_checkboxText">
-            <input type="checkbox" name="Скорее положительное" class="userForm__circleCheckbox" checked>Скорее положительное
+          <div class="user-form__border"></div>
+          <h1 class="user-form__title">Ваше общее впечатление:</h1>
+          <label class="user-form_checkbox-text">
+            <input type="radio" name="rate" value="Скорее положительное" class="user-form__circle-checkbox" checked>Скорее положительное
           </label>
-          <label class="userForm_checkboxText">
-            <input type="checkbox" name="Скорее Отрицательное" class="userForm__circleCheckbox">Скорее Отрицательное
+          <label  class="user-form__checkbox-text">
+            <input type="radio" name="rate" value="Скорее отрицательное" class="user-form__circle-checkbox">Скорее отрицательное
           </label>
-          <label class="userForm_checkboxText">
-            <input type="checkbox" name="Затрудняюсь ответить" class="userForm__circleCheckbox">Затрудняюсь ответить
+          <label  class="user-form__checkbox-text">
+            <input type="radio" name="rate" value="Затрудняюсь ответить" class="user-form__circle-checkbox">Затрудняюсь ответить
           </label>
-          <div class="userForm__border"></div>
-          <h1 class="userForm__title">Посещенные достопримечательности:</h1>
-          <label class="userForm_checkboxText">
-            <input type="checkbox" name="Мост Длявола" class="userForm__squareCheckbox" checked>Мост Длявола
+          <div class="user-form__border"></div>
+          <h1 class="user-form__title">Посещенные достопримечательности:</h1>
+          <label class="user-form_checkbox-text">
+            <input type="checkbox" name="Мост Длявола" class="user-form__square-checkbox" checked>Мост Длявола
           </label>
-          <label class="userForm_checkboxText">
-            <input type="checkbox" name="Гора-Колокол" class="userForm__squareCheckbox" checked>Гора-Колокол
+          <label class="user-form__checkbox-text">
+            <input type="checkbox" name="Гора-Колокол" class="user-form__square-checkbox" checked>Гора-Колокол
           </label>
-          <label class="userForm_checkboxText">
-            <input type="checkbox" name="Слайд-парк" class="userForm__squareCheckbox" checked>Слайд-парк
+          <label class="user-form__checkbox-text">
+            <input type="checkbox" name="Слайд-парк" class="user-form__square-checkbox" checked>Слайд-парк
           </label>
-          <label class="userForm_checkboxText">
-            <input type="checkbox" name="Красные скалы" class="userForm__squareCheckbox">Красные скалы
+          <label class="user-form__checkbox-text">
+            <input type="checkbox" name="Красные скалы" class="user-form__square-checkbox">Красные скалы
           </label>
-          <div class="userForm__border"></div>
-          <h1 class="userForm__title">Опишите свои эмоции:</h1>
-          <textarea name="emotions"  cols="30" rows="10" class="userForm__emotions">
-            Опишите подробно свои эмоции
-          </textarea>
-          <input type="submit" class="userForm__submit" value="Отправить отзыв">
+          <div class="user-form__border"></div>
+          <h1 class="user-form__title">Опишите свои эмоции:</h1>
+          <textarea name="emotions"  cols="30" rows="10" class="user-form__emotions" placeholder="Опишите подробно свои эмоции"></textarea>
+          <input type="submit" class="user-form__submit" value="Отправить отзыв">
         </form>
       </section>
     </main>
-    <footer class="footerPart">
-      <a href="#" class="footerPart__hashtag">#visitsedona</a>
-      <div class="footerPart__social">
+     <footer class="footer-part">
+      <a href="#" class="footer-part__hashtag">#visitsedona</a>
+      <div class="footer-part__social">
         <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Twitter" class="social__pic"></a>
         <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Facebook" class="social__pic"></a>
         <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Youtube" class="social__pic"></a>
       </div>
-      <div class="footerPart__madeBy">
-        <p class="madeBy__text">Разработано</p>
-        <img src="http://placehold.it/27x34" alt="" class="madeBy__logo">
+      <div class="made-by">
+        <a target="_blank" class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" >
+          <p class="made-by__text">Разработано</p>
+          <img src="http://placehold.it/27x34" alt="" class="made-by__logo">
+        </a>
       </div>
     </footer>
   </body>
