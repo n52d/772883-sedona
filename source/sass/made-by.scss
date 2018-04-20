@@ -1,0 +1,16 @@
+.made-by{
+  &__link{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo{
+    width: 27px;
+    height: 34px;
+    margin-left: 10px;
+  }
+}

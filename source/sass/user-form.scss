@@ -1,0 +1,123 @@
+
+.user-form{
+  &__title{
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px 0 24px 0;
+  }
+  &__label{
+    color: $gray;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__contact-input{
+    border: 0;
+    background-color: $light-gray;
+    width: 222px;
+    padding-left: 22px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    &::placeholder{
+      font-size: 18px;
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+  &__input{
+    display: inline-block;
+    border: 0;
+    background-color: $light-gray;
+    width: 192px;
+    padding: 0 0 0 22px;
+    height: 58px;
+    font-weight: 700;
+    color: #000000;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+    &::placeholder{
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+  &__border{
+
+  }
+  &__contact-text{
+    font-size: 14px;
+    padding-left: 32px;
+    color: &gray;
+    text-transform: uppercase;
+  }
+  &__checkbox-text{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  &__circle-checkbox{
+    visibility: hidden;
+    position: absolute;
+
+  }
+  &__square-checkbox{
+
+  }
+  &__submit{
+    text-transform: uppercase;
+    color: #ffffff;
+    display: block;
+    background-color: $blue;
+    margin: 51px auto 78px auto;
+    border: 0;
+    width: 280px;
+    height: 58px;
+    font-size: 18px;
+  }
+  &__side-block{
+    width: 58px;
+    height: 100%;
+    background-color: #e6e6e6;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__flex{
+    display: flex;
+    justify-content: center;
+    margin: 14px 0 20px 0;
+    height: 58px;
+  }
+  &__emotions{
+    border: 0;
+    background-color: $light-gray;
+    padding: 22px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    &::placeholder{
+      color: #000000;
+
+    }
+  }
+  &__map-marker{
+    widows: 60px;
+    height: 60px;
+  }
+}
+// user-form__input
+.name{
+  width:230px;
+}
+.img-phone{
+  background-image: url(/img/icon-phone.svg) ;
+}
+.img-email{
+  background-image: url(/img/icon-mail.svg) ;
+}
+// user-form__input

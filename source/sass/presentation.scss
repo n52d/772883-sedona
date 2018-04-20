@@ -1,0 +1,13 @@
+.presentation {
+  text-align: center;
+  text-transform: uppercase;
+  &__title{
+    font-size: 18px;
+    margin: 39px 0 29px 0;
+  }
+  &__discription{
+    font-size: 14px;
+    width: 240px;
+    margin: 0 auto;
+  }
+}

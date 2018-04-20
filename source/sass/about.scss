@@ -1,0 +1,24 @@
+.about{
+  text-align: center;
+  text-transform: uppercase;
+  &__title{
+    font-size: 18px;
+    padding: 33px 0 18px 0;
+  }
+  &__discription{
+    font-size: 14px;
+    padding-bottom: 45px;
+  }
+  &__white{
+    color: #ffffff;
+  }
+  &__blue-bg{
+    background-color: $blue;
+  }
+  &__gray-bg{
+    background-color: $light-gray;
+  }
+  &__line-pic{
+    width: 100%;
+  }
+}

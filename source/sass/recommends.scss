@@ -1,0 +1,23 @@
+.recommends{
+  margin: 25px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  &__title{
+    font-size: 18px;
+    padding: 10px 0 25px 0;
+  }
+  &__discription{
+    padding-bottom: 20px;
+  }
+  &__pic{
+    display: inline-block;
+    margin: 0 13px 25px 25px;
+    width: 40px;
+    height: 37px;
+  }
+  &__text-block{
+    width: 232px;
+    display: inline-block;
+  }
+}

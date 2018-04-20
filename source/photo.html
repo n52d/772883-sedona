@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Photo</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-part">
       <nav class="top-nav">
           <button class="top-nav__close" type="button">X</button>
           <ul class="top-nav__menu menu">
-            <li class="menu__item"><a href="index.html">Главная</a></li>
-            <li class="menu__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="menu__item"><a target="_blank" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="photo.html">Фото и видео</a></li>
+            <li class="menu__item"><a class="menu__link" href="form.html">Форма отзыва</a></li>
+            <li class="menu__item"><a class="menu__link" target="_blank" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
-          <a href="#" class="top-nav__logo-link">
-          <img src="http://placehold.it/102x83" alt="" class="top-nav__logo-pic"></a>
-          <img class="top-nav__welcome-pic" src="http://placehold.it/320x390" alt="Welcome" >
       </nav>
+      <section class="top-intro">
+        <div class="top-intro__fixed-block"></div>
+        <a href="index.html" class="top-intro__logo-link">
+          <img src="img/logo-sedona-mobile.svg" alt="" class="top-intro__logo-pic">
+        </a>
+        <img class="top-intro__text-sedona" src="img/text-sedona.svg" alt="">
+        <img class="top-intro__bottom-pic" src="img/bg-intro-triangle-mobile.svg" alt="">
+      </section>
     </header>
     <main class="main-part">
       <section class="welcome">
-         <h1 class="welcome__title">Фото и видео</h1>
+          <h1 class="welcome__title">Фото и видео</h1>
           <p class="welcome__discription">
               Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
           </p>
@@ -29,39 +35,47 @@
       <section class="container">
         <div class="review-block">
           <a href="#" target="_blank"  class="review-block__link">
-            <img class="review-block__img" src="http://placehold.it/280x280" alt="">
+            <img class="review-block__img" src="img/photo-sunset-mobile@1x.jpg" alt="">
           </a>
           <p class="review-block__name">Неродные просторы</p>
           <p class="review-block__author">Автор фото: Борис</p>
-          <img class="review-block__like-pic" src="http://placehold.it/44x44" alt="" >
-          <p class="review-block__like-count">1350</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">1350</p>
+          </div>
         </div>
         <div class="review-block">
           <a href="#" target="_blank"  class="review-block__link">
-            <img class="review-block__img" src="http://placehold.it/280x280" alt="">
+            <img class="review-block__img" src="img/photo-cactus-mobile@1x.jpg" alt="">
           </a>
           <p class="review-block__name">Местная растительность</p>
           <p class="review-block__author">Автор фото: Сергей</p>
-          <img class="review-block__like-pic" src="http://placehold.it/44x44" alt="" >
-          <p class="review-block__like-count">143</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">143</p>
+          </div>
         </div>
         <div class="review-block">
           <a href="#" target="_blank"  class="review-block__link">
-            <img class="review-block__img" src="http://placehold.it/280x280" alt="">
+            <img class="review-block__img" src="img/photo-roads-mobile@1x.jpg" alt="">
           </a>
           <p class="review-block__name">Дорога на север</p>
           <p class="review-block__author">Автор фото: Петр</p>
-          <img class="review-block__like-pic" src="http://placehold.it/44x44" alt="" >
-          <p class="review-block__like-count">96</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">96</p>
+          </div>
         </div>
         <div class="review-block">
           <a href="#" target="_blank" class="review-block__link">
-            <img class="review-block__img" src="http://placehold.it/280x280" alt="">
+            <img class="review-block__img" src="img/photo-bridge-mobile@1x.jpg" alt="">
           </a>
           <p class="review-block__name">Мост дьявола</p>
           <p class="review-block__author">Автор фото: Антон</p>
-          <img class="review-block__like-pic" src="http://placehold.it/44x44" alt="" >
-          <p class="review-block__like-count">254</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">254</p>
+          </div>
         </div>
       </section>
       <section class="presentation">
@@ -77,17 +91,17 @@
 
       </section>
     </main>
-    <footer class="footer-part">
+      <footer class="footer-part">
       <a href="#" class="footer-part__hashtag">#visitsedona</a>
       <div class="footer-part__social social">
-        <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Twitter" class="social__pic"></a>
-        <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Facebook" class="social__pic"></a>
-        <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Youtube" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-twitter.jpg" alt="Twitter" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-fb.jpg" alt="Facebook" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-youtube.jpg" alt="Youtube" class="social__pic"></a>
       </div>
       <div class="made-by">
         <a target="_blank" class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" >
-          <p class="made-by__text">Разработано</p>
-          <img src="http://placehold.it/27x34" alt="" class="made-by__logo">
+          Разработано
+          <img src="img/htmlacademy.svg" alt="" class="made-by__logo">
         </a>
       </div>
     </footer>

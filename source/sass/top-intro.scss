@@ -1,0 +1,28 @@
+.top-intro{
+  background-image: url(/img/bg-back-mobile@1x.jpg);
+  background-position: center;
+  &__logo-link{
+    display: flex;
+    justify-content: center;
+
+  }
+  &__logo-pic{
+    z-index: 2;
+  }
+  &__bottom-pic{
+    width: 100%;
+
+  }
+  &__fixed-block{
+    background-color: #ffffff;
+    height: 56px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  &__text-sedona{
+    width: 229px;
+    margin: 24px auto 39px auto;
+    display: block;
+  }
+}
