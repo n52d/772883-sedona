@@ -1,0 +1,30 @@
+.about__title {
+  font-size: 18px;
+  padding: 33px 0 18px 0;
+}
+
+.about__discription {
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+
+.about__line-pic {
+  width: 100%;
+}
+
+.about {
+  text-align: center;
+  text-transform: uppercase;
+
+  &--white {
+    color: #ffffff;
+  }
+
+  &--gray-bg {
+    background-color: $light-gray;
+  }
+
+  &--blue-bg {
+    background-color: $blue;
+  }
+}

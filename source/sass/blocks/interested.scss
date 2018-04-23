@@ -1,0 +1,27 @@
+.interested {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.interested__title {
+  font-size: 18px;
+  padding: 33px 0 30px 0;
+}
+
+.interested__discription {
+  font-size: 14px;
+}
+
+.interested__button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  text-decoration: none;
+  width: 280px;
+  height: 58px;
+  background-color: $blue;
+  margin: 40px auto 50px auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

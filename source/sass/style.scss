@@ -2,23 +2,24 @@ $blue:#81b3d2;
 $gray:#333333;
 $light-gray:#f2f2f2;
 
-@import "scaffolding.scss";
-@import "menu.scss";
-@import "top-intro.scss";
-@import "review-block.scss";
-@import "welcome.scss";
-@import "user-form.scss";
-@import "presentation.scss";
-@import "about.scss";
-@import "recommends.scss";
-@import "interested.scss";
-@import "footer-part.scss";
-@import "social.scss";
-@import "made-by.scss";
-
+@import "blocks/main-part.scss";
+@import "blocks/scaffolding.scss";
+@import "blocks/menu.scss";
+@import "blocks/top-intro.scss";
+@import "blocks/review-block.scss";
+@import "blocks/welcome.scss";
+@import "blocks/user-form.scss";
+@import "blocks/presentation.scss";
+@import "blocks/about.scss";
+@import "blocks/recommends.scss";
+@import "blocks/interested.scss";
+@import "blocks/footer-part.scss";
+@import "blocks/social.scss";
+@import "blocks/made-by.scss";
+@import "blocks/fonts.scss";
+@import "blocks/top-nav.scss";
 
 //h1,p{
 //  padding: 0;
 //  margin: 0;
 //}
-
