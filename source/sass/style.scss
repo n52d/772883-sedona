@@ -1,9 +1,6 @@
-$blue:#81b3d2;
-$gray:#333333;
-$light-gray:#f2f2f2;
-
+@import "varables.scss";
 @import "blocks/main-part.scss";
-@import "blocks/scaffolding.scss";
+@import "scaffolding.scss";
 @import "blocks/menu.scss";
 @import "blocks/top-intro.scss";
 @import "blocks/review-block.scss";
@@ -16,10 +13,5 @@ $light-gray:#f2f2f2;
 @import "blocks/footer-part.scss";
 @import "blocks/social.scss";
 @import "blocks/made-by.scss";
-@import "blocks/fonts.scss";
+@import "fonts.scss";
 @import "blocks/top-nav.scss";
-
-//h1,p{
-//  padding: 0;
-//  margin: 0;
-//}

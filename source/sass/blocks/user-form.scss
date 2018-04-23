@@ -4,11 +4,11 @@
   }
 
   &--img-phone {
-    background-image: url("/img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
   }
 
   &--img-email {
-    background-image: url("/img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
@@ -130,7 +130,6 @@
 }
 
 .user-form__map-marker {
-  widows: 60px;
+  width: 60px;
   height: 60px;
 }
-
