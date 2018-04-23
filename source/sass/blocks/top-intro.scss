@@ -24,12 +24,13 @@
   width: 229px;
   margin: 24px auto 39px auto;
   display: block;
-}
 
-.top-intro {
   &--width-mod {
     width: 280px;
   }
+}
+
+.top-intro {
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-position: center;
 }

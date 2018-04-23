@@ -1,17 +1,3 @@
-.user-form {
-  &--name {
-    width: 230px;
-  }
-
-  &--img-phone {
-    background-image: url("../img/icon-phone.svg");
-  }
-
-  &--img-email {
-    background-image: url("../img/icon-mail.svg");
-  }
-}
-
 .user-form__title {
   font-size: 18px;
   color: #000000;
@@ -53,6 +39,10 @@
   color: #000000;
   font-size: 18px;
   margin: 10px 0 10px 0;
+
+  &--name {
+    width: 230px;
+  }
 
   &::placeholder {
     font-weight: 700;
@@ -105,6 +95,14 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
+
+  &--img-phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--img-email {
+    background-image: url("../img/icon-mail.svg");
+  }
 }
 
 .user-form__flex {

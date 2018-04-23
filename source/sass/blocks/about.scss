@@ -1,11 +1,19 @@
 .about__title {
   font-size: 18px;
   padding: 33px 0 18px 0;
+
+  &--white {
+    color: #ffffff;
+  }
 }
 
 .about__discription {
   font-size: 14px;
   padding-bottom: 40px;
+
+  &--white {
+    color: #ffffff;
+  }
 }
 
 .about__line-pic {
@@ -17,10 +25,6 @@
   text-transform: uppercase;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-
-  &--white {
-    color: #ffffff;
-  }
 
   &--gray-bg {
     background-color: $light-gray;
