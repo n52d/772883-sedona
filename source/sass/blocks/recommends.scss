@@ -1,0 +1,33 @@
+.recommends h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.recommends {
+  margin: 25px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+.recommends__title {
+  font-size: 18px;
+  padding: 10px 0 25px 0;
+}
+
+.recommends__discription {
+  padding-bottom: 20px;
+}
+
+.recommends__pic {
+  display: inline-block;
+  margin: 0 13px 25px 25px;
+  width: 40px;
+  height: 37px;
+}
+
+.recommends__text-block {
+  width: 232px;
+  display: inline-block;
+}

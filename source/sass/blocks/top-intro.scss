@@ -1,0 +1,36 @@
+.top-intro__logo-link {
+  display: flex;
+  justify-content: center;
+}
+
+.top-intro__logo-pic {
+  z-index: 2;
+}
+
+.top-intro__bottom-pic {
+  width: 100%;
+}
+
+.top-intro__fixed-block {
+  background-color: #ffffff;
+  height: 56px;
+  width: 100%;
+  max-width: 320px;
+  z-index: 1;
+  position: absolute;
+}
+
+.top-intro__text-sedona {
+  width: 229px;
+  margin: 24px auto 39px auto;
+  display: block;
+
+  &--width-mod {
+    width: 280px;
+  }
+}
+
+.top-intro {
+  background-image: url("/img/bg-back-mobile@1x.jpg");
+  background-position: center;
+}

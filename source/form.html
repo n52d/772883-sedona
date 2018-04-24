@@ -3,62 +3,81 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">-->
+
   </head>
   <body>
     <header class="header-part">
       <nav class="top-nav">
           <button class="top-nav__close" type="button">X</button>
           <ul class="top-nav__menu menu">
-            <li class="menu__item"><a href="index.html">Главная</a></li>
-            <li class="menu__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
-            <li class="menu__item"><a target="_blank" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+            <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="photo.html">Фото и видео</a></li>
+            <li class="menu__item"><a class="menu__link" href="form.html">Форма отзыва</a></li>
+            <li class="menu__item"><a class="menu__link" target="_blank" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
-          <a href="#" class="top-nav__logoLink">
-          <img src="http://placehold.it/102x83" alt="" class="top-nav__logo-pic"></a>
-          <img class="top-nav__welcome-pic" src="http://placehold.it/320x390" alt="Welcome" >
       </nav>
+      <section class="top-intro">
+        <div class="top-intro__fixed-block"></div>
+        <a href="index.html" class="top-intro__logo-link">
+          <img src="img/logo-sedona-mobile.svg" alt="" class="top-intro__logo-pic">
+        </a>
+        <img class="top-intro__text-sedona" src="img/text-sedona.svg" alt="">
+        <img class="top-intro__bottom-pic" src="img/bg-intro-triangle-mobile.svg" alt="">
+      </section>
     </header>
     <main class="main-part">
       <section class="welcome">
-         <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h1 class="welcome__title">Оставьте свой отзыв</h1>
           <p class="welcome__discription">
-              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
       </section>
       <section class="user-form">
         <form action="https://echo.htmlacademy.ru" class="user-form">
-          <label class="user-form_nameLabel">
-            Имя*:<input class="user-form__name-input" type="text" name="username" placeholder="Петр">
+          <h1 class="user-form__title">Представьтесь:</h1>
+          <label class="user-form__label">
+            Имя*:<input class="user-form__input user-form__input--name" type="text" name="username" placeholder="Петр">
           </label>
-          <label class="user-form__soname-label">
-            Фамилия*:<input class="user-form__usersoname-input" type="text" name="soname" placeholder="Иванов">
+          <label class="user-form__label">
+            Фамилия*:<input class="user-form__input soname" type="text" name="soname" placeholder="Иванов">
           </label>
-          <label class="user-form__patronymic-label">
-            Фамилия*:<input class="user-form__patronymic-input" type="text" name="patronymic" placeholder="Александрович">
+          <label class="user-form__label">
+            Отчество*:<input class="user-form__input patronymic" type="text" name="patronymic" placeholder="Александрович">
           </label>
           <div class="user-form__border"></div>
           <h1 class="user-form__title">Контактная информация:</h1>
+          <label for="tel" class="user-form__contact-text">
+            Контактный телефон*:
+          </label>
+          <div class="user-form__flex">
+            <input type="tel" name="tel" class="user-form__contact-input " placeholder="Введите телефон"><div class="user-form__side-block user-form__side-block--img-phone"></div>
+          </div>
           <label class="user-form__contact-text">
-            Контактный телефон*: <input type="tel" class="contact-input phone-img" placeholder="Введите телефон">
+            Электронная почта*:
           </label>
-          <label class="user-form__contactText">
-            Электронная почта*: <input type="tel" class="contact-input email-img" placeholder="Введите e-mail">
-          </label>
+          <div class="user-form__flex">
+            <input type="email" class="user-form__contact-input" placeholder="Введите e-mail">
+            <div class="user-form__side-block user-form__side-block--img-email"></div>
+          </div>
           <div class="user-form__border"></div>
           <h1 class="user-form__title">Ваше общее впечатление:</h1>
-          <label class="user-form_checkbox-text">
-            <input type="radio" name="rate" value="Скорее положительное" class="user-form__circle-checkbox" checked>Скорее положительное
+          <label class="user-form__checkbox-text">
+            <input type="radio" name="rate" value="Скорее положительное" class="user-form__circle-checkbox" checked>
+            <img src="img/Shape_active.png" alt="" class="user-form__map-marker"> Скорее положительное
           </label>
           <label  class="user-form__checkbox-text">
-            <input type="radio" name="rate" value="Скорее отрицательное" class="user-form__circle-checkbox">Скорее отрицательное
+            <input type="radio" name="rate" value="Скорее отрицательное" class="user-form__circle-checkbox">
+            <img src="img/Shape_inactive.png" alt="" class="user-form__map-marker">Скорее отрицательное
           </label>
           <label  class="user-form__checkbox-text">
-            <input type="radio" name="rate" value="Затрудняюсь ответить" class="user-form__circle-checkbox">Затрудняюсь ответить
+            <input type="radio" name="rate" value="Затрудняюсь ответить" class="user-form__circle-checkbox">
+            <img src="img/Shape_inactive.png" alt="" class="user-form__map-marker">Затрудняюсь ответить
           </label>
           <div class="user-form__border"></div>
-          <h1 class="user-form__title">Посещенные достопримечательности:</h1>
-          <label class="user-form_checkbox-text">
+          <h1 class="user-form__title">Посещенные <br> достопримечательности:</h1>
+          <label class="user-form__checkbox-text">
             <input type="checkbox" name="Мост Длявола" class="user-form__square-checkbox" checked>Мост Длявола
           </label>
           <label class="user-form__checkbox-text">
@@ -72,22 +91,22 @@
           </label>
           <div class="user-form__border"></div>
           <h1 class="user-form__title">Опишите свои эмоции:</h1>
-          <textarea name="emotions"  cols="30" rows="10" class="user-form__emotions" placeholder="Опишите подробно свои эмоции"></textarea>
+          <textarea name="user-form__emotions"  cols="30" rows="10" class="user-form__emotions" placeholder="Опишите подробно свои эмоции"></textarea>
           <input type="submit" class="user-form__submit" value="Отправить отзыв">
         </form>
       </section>
     </main>
-     <footer class="footer-part">
+    <footer class="footer-part">
       <a href="#" class="footer-part__hashtag">#visitsedona</a>
       <div class="footer-part__social social">
-        <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Twitter" class="social__pic"></a>
-        <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Facebook" class="social__pic"></a>
-        <a href="#" class="social__link"><img src="http://placehold.it/92x96" alt="Youtube" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-twitter.jpg" alt="Twitter" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-fb.jpg" alt="Facebook" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-youtube.jpg" alt="Youtube" class="social__pic"></a>
       </div>
       <div class="made-by">
         <a target="_blank" class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" >
-          <p class="made-by__text">Разработано</p>
-          <img src="http://placehold.it/27x34" alt="" class="made-by__logo">
+          Разработано
+          <img src="img/htmlacademy.svg" alt="" class="made-by__logo">
         </a>
       </div>
     </footer>
