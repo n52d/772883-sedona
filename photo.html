@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Photo</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header-part">
+      <nav class="top-nav">
+        <button class="top-nav__close" type="button">X</button>
+        <ul class="top-nav__menu menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="photo.html">Фото и видео</a></li>
+          <li class="menu__item"><a class="menu__link" href="form.html">Форма отзыва</a></li>
+          <li class="menu__item"><a class="menu__link" target="_blank" href="https://htmlacademy.ru">HTML ACADEMY</a></li>
+        </ul>
+      </nav>
+      <section class="top-intro">
+        <div class="top-intro__fixed-block"></div>
+        <a href="index.html" class="top-intro__logo-link">
+          <img src="img/logo-sedona-mobile.svg" alt="" class="top-intro__logo-pic">
+        </a>
+        <img class="top-intro__text-sedona" src="img/text-sedona.svg" alt="">
+        <img class="top-intro__bottom-pic" src="img/bg-intro-triangle-mobile.svg" alt="">
+      </section>
+    </header>
+    <main class="main-part">
+      <section class="welcome">
+          <h1 class="welcome__title">Фото и видео</h1>
+          <p class="welcome__discription">
+              Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          </p>
+      </section>
+      <section class="container">
+        <div class="review-block">
+          <a href="#" target="_blank"  class="review-block__link">
+            <img class="review-block__img  review-block__img--first-child" src="img/photo-sunset-mobile@1x.jpg" alt="">
+          </a>
+          <p class="review-block__name">Неродные просторы</p>
+          <p class="review-block__author">Автор фото: Борис</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">1350</p>
+          </div>
+        </div>
+        <div class="review-block">
+          <a href="#" target="_blank"  class="review-block__link">
+            <img class="review-block__img" src="img/photo-cactus-mobile@1x.jpg" alt="">
+          </a>
+          <p class="review-block__name">Местная растительность</p>
+          <p class="review-block__author">Автор фото: Сергей</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">143</p>
+          </div>
+        </div>
+        <div class="review-block">
+          <a href="#" target="_blank"  class="review-block__link">
+            <img class="review-block__img" src="img/photo-roads-mobile@1x.jpg" alt="">
+          </a>
+          <p class="review-block__name">Дорога на север</p>
+          <p class="review-block__author">Автор фото: Петр</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">96</p>
+          </div>
+        </div>
+        <div class="review-block">
+          <a href="#" target="_blank" class="review-block__link">
+            <img class="review-block__img" src="img/photo-bridge-mobile@1x.jpg" alt="">
+          </a>
+          <p class="review-block__name">Мост дьявола</p>
+          <p class="review-block__author">Автор фото: Антон</p>
+          <div class="review-block__rating">
+            <a href="#"><img class="review-block__like-pic" src="img/icon-like.png" alt="" ></a>
+            <p class="review-block__like-count">254</p>
+          </div>
+        </div>
+      </section>
+      <section class="presentation">
+        <h1 class="presentation__title">Все еще сомневаетесь?</h1>
+        <p class="presentation__discription">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+        <video class="presentation__video" controls preload="metadata">
+          <source src="video.mp4" type="video/mp4">
+          <source src="video.ogv" type="video/ogg">
+          <source src="video.webm" type="video/webm">
+        </video>
+
+      </section>
+    </main>
+    <footer class="footer-part">
+      <a href="#" class="footer-part__hashtag">#visitsedona</a>
+      <div class="footer-part__social social">
+        <a href="#" class="social__link"><img src="img/icon-twitter.jpg" alt="Twitter" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-fb.jpg" alt="Facebook" class="social__pic"></a>
+        <a href="#" class="social__link"><img src="img/icon-youtube.jpg" alt="Youtube" class="social__pic"></a>
+      </div>
+      <div class="made-by">
+        <a target="_blank" class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" >
+          Разработано
+          <img src="img/htmlacademy.svg" alt="" class="made-by__logo">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

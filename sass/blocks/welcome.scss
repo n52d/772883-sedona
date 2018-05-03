@@ -1,0 +1,31 @@
+.welcome {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.welcome__title {
+  font-size: 18px;
+  padding: 42px 0 36px 0;
+}
+
+.welcome__discription {
+  font-size: 14px;
+  color: $gray;
+  padding-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome {
+    &:nth-child(1) {
+      flex-grow: 1;
+    }
+  }
+  .welcome__discription, .welcome__title {
+    display: block;
+    margin: 0 auto;
+    max-width: 440px;
+  }
+  .welcome__title {
+    font-size: 30px;
+  }
+}
