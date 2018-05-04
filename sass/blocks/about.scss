@@ -35,13 +35,14 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width:$tablet-width) {
   .about__line-pic {
     display: none;
   }
 
   .about {
     display: flex;
+
   }
 
   .about__photo {
@@ -58,12 +59,12 @@
     width: 256px;
   }
 
-  .about--blue-bg {
+  .about--blue-bg{
     width: $tablet-width;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width:$desktop-width) {
   .about--blue-bg {
     width: $desktop-width;
   }
@@ -73,7 +74,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width:$desktop-width) {
   .about--gray-bg {
     flex-basis: 400px;
     justify-content: center;

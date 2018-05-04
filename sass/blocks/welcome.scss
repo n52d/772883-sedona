@@ -20,17 +20,12 @@
       flex-grow: 1;
     }
   }
-
-  .welcome__discription {
+  .welcome__discription, .welcome__title {
     display: block;
     margin: 0 auto;
     max-width: 440px;
   }
-
   .welcome__title {
     font-size: 30px;
-    display: block;
-    margin: 0 auto;
-    max-width: 440px;
   }
 }

@@ -1,4 +1,4 @@
-.main-part {
+.main-part{
   max-width: 320px;
   display: block;
   margin: 0 auto;
@@ -19,6 +19,7 @@
 @media (min-width: $desktop-width) {
   .main-part {
     max-width: $desktop-width;
+    height: 350px;
   }
 
   .main-part__map-pic {
