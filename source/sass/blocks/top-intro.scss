@@ -34,3 +34,9 @@
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-position: center;
 }
+
+@media (min-width: $tablet-width) {
+  .top-intro__fixed-block {
+    max-width: $tablet-width;
+  }
+}

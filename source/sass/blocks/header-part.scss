@@ -1,27 +1,17 @@
-.main-part {
+.header-part {
   max-width: 320px;
   display: block;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .main-part {
+  .header-part {
     max-width: $tablet-width;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .main-part__map-pic {
-    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-part {
+  .header-part {
     max-width: $desktop-width;
-  }
-
-  .main-part__map-pic {
-    width: $desktop-width;
   }
 }

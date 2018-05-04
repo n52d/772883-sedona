@@ -8,8 +8,15 @@
   padding: 33px 0 30px 0;
 }
 
+.interested__br {
+  display: none;
+}
+
 .interested__discription {
   font-size: 14px;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .interested__button {
@@ -24,4 +31,18 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .interested {
+    margin: 0 auto;
+  }
+
+  .interested__discription {
+    width: 458px;
+  }
+
+  .interested__br {
+    display: inline;
+  }
 }
