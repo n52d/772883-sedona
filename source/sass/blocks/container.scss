@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 648px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: $desktop-width;
+  }
+}

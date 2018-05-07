@@ -18,6 +18,7 @@
   max-width: 320px;
   z-index: 1;
   position: absolute;
+  box-shadow: 0 -5px 5px -5px #333;
 }
 
 .top-intro__text-sedona {
@@ -33,4 +34,10 @@
 .top-intro {
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .top-intro__fixed-block {
+    max-width: $tablet-width;
+  }
 }

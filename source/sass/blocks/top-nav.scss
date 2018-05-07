@@ -1,6 +1,19 @@
-//.top-nav {
-//
-//}
+.top-nav__close {
+  position: relative;
+  top:44px;
+  left: 277px;
+  width: 23px;
+  height: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .top-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 //.top-nav__close {
 //
 //}

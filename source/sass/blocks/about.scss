@@ -34,3 +34,56 @@
     background-color: $blue;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about__line-pic {
+    display: none;
+  }
+
+  .about {
+    display: flex;
+  }
+
+  .about__photo {
+    flex-basis: 512px;
+    height: 256px;
+  }
+
+  .about__photo--order {
+    order: -1;
+  }
+
+  .about__discription {
+    display: block;
+    width: 256px;
+  }
+
+  .about--blue-bg {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about--blue-bg {
+    width: $desktop-width;
+  }
+
+  .about__photo {
+    flex-basis: 800px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about--gray-bg {
+    flex-basis: 400px;
+    justify-content: center;
+  }
+
+  .about__title {
+    font-size: 21px;
+  }
+
+  .about__text-part {
+    margin: 0 auto;
+  }
+}

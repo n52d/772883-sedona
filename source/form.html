@@ -2,10 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-<!--    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">-->
-
   </head>
   <body>
     <header class="header-part">
@@ -36,63 +35,74 @@
       </section>
       <section class="user-form">
         <form action="https://echo.htmlacademy.ru" class="user-form">
-          <h1 class="user-form__title">Представьтесь:</h1>
-          <label class="user-form__label">
-            Имя*:<input class="user-form__input user-form__input--name" type="text" name="username" placeholder="Петр">
-          </label>
-          <label class="user-form__label">
-            Фамилия*:<input class="user-form__input soname" type="text" name="soname" placeholder="Иванов">
-          </label>
-          <label class="user-form__label">
-            Отчество*:<input class="user-form__input patronymic" type="text" name="patronymic" placeholder="Александрович">
-          </label>
-          <div class="user-form__border"></div>
-          <h1 class="user-form__title">Контактная информация:</h1>
-          <label for="tel" class="user-form__contact-text">
-            Контактный телефон*:
-          </label>
-          <div class="user-form__flex">
-            <input type="tel" name="tel" class="user-form__contact-input " placeholder="Введите телефон"><div class="user-form__side-block user-form__side-block--img-phone"></div>
+          <div class="user-form__part  user-form__part--desktop">
+            <h1 class="user-form__title  user-form__title--left">Представьтесь:</h1>
+            <label class="user-form__label">
+              Имя*:<input class="user-form__input user-form__input--name" type="text" name="username" placeholder="Петр">
+            </label>
+            <label class="user-form__label">
+              Фамилия*:<input class="user-form__input soname" type="text" name="soname" placeholder="Иванов">
+            </label>
+            <label class="user-form__label">
+              Отчество*:<input class="user-form__input patronymic" type="text" name="patronymic" placeholder="Александрович">
+            </label>
+            <div class="user-form__border"></div>
           </div>
-          <label class="user-form__contact-text">
-            Электронная почта*:
-          </label>
-          <div class="user-form__flex">
-            <input type="email" class="user-form__contact-input" placeholder="Введите e-mail">
-            <div class="user-form__side-block user-form__side-block--img-email"></div>
+          <div class="user-form__part">
+            <h1 class="user-form__title user-form__title--full-width">Контактная информация:</h1>
+            <label for="tel" class="user-form__contact-text">
+              <span class="user-form__contact-hidden">Контактный</span> телефон*:
+            </label>
+            <div class="user-form__flex   user-form__flex--margin-right">
+              <input type="tel" name="tel" class="user-form__contact-input" placeholder="Введите телефон"><div class="user-form__side-block user-form__side-block--img-phone"></div>
+            </div>
+            <label class="user-form__contact-text">
+              Электронная почта*:
+            </label>
+            <div class="user-form__flex">
+              <input type="email" class="user-form__contact-input" placeholder="Введите e-mail">
+              <div class="user-form__side-block user-form__side-block--img-email"></div>
+            </div>
+            <div class="user-form__border"></div>
           </div>
-          <div class="user-form__border"></div>
-          <h1 class="user-form__title">Ваше общее впечатление:</h1>
-          <label class="user-form__checkbox-text">
-            <input type="radio" name="rate" value="Скорее положительное" class="user-form__circle-checkbox" checked>
-            <img src="img/Shape_active.png" alt="" class="user-form__map-marker"> Скорее положительное
-          </label>
-          <label  class="user-form__checkbox-text">
-            <input type="radio" name="rate" value="Скорее отрицательное" class="user-form__circle-checkbox">
-            <img src="img/Shape_inactive.png" alt="" class="user-form__map-marker">Скорее отрицательное
-          </label>
-          <label  class="user-form__checkbox-text">
-            <input type="radio" name="rate" value="Затрудняюсь ответить" class="user-form__circle-checkbox">
-            <img src="img/Shape_inactive.png" alt="" class="user-form__map-marker">Затрудняюсь ответить
-          </label>
-          <div class="user-form__border"></div>
-          <h1 class="user-form__title">Посещенные <br> достопримечательности:</h1>
-          <label class="user-form__checkbox-text">
-            <input type="checkbox" name="Мост Длявола" class="user-form__square-checkbox" checked>Мост Длявола
-          </label>
-          <label class="user-form__checkbox-text">
-            <input type="checkbox" name="Гора-Колокол" class="user-form__square-checkbox" checked>Гора-Колокол
-          </label>
-          <label class="user-form__checkbox-text">
-            <input type="checkbox" name="Слайд-парк" class="user-form__square-checkbox" checked>Слайд-парк
-          </label>
-          <label class="user-form__checkbox-text">
-            <input type="checkbox" name="Красные скалы" class="user-form__square-checkbox">Красные скалы
-          </label>
-          <div class="user-form__border"></div>
-          <h1 class="user-form__title">Опишите свои эмоции:</h1>
-          <textarea name="user-form__emotions"  cols="30" rows="10" class="user-form__emotions" placeholder="Опишите подробно свои эмоции"></textarea>
-          <input type="submit" class="user-form__submit" value="Отправить отзыв">
+          <div class="user-form__part">
+            <h1 class="user-form__title  user-form__title--left user-form__title--padding">Ваше общее впечатление:</h1>
+            <label class="user-form__checkbox-text">
+              <input type="radio" name="rate" value="Скорее положительное" class="user-form__circle-checkbox" checked>
+              <img src="img/Shape_active.png" alt="" class="user-form__map-marker"> Скорее положительное
+            </label>
+            <label  class="user-form__checkbox-text">
+              <input type="radio" name="rate" value="Скорее отрицательное" class="user-form__circle-checkbox">
+              <img src="img/Shape_inactive.png" alt="" class="user-form__map-marker">Скорее отрицательное
+            </label>
+            <label  class="user-form__checkbox-text">
+              <input type="radio" name="rate" value="Затрудняюсь ответить" class="user-form__circle-checkbox">
+              <img src="img/Shape_inactive.png" alt="" class="user-form__map-marker">Затрудняюсь ответить
+            </label>
+            <div class="user-form__border"></div>
+          </div>
+          <div class="user-form__part">
+            <h1 class="user-form__title  user-form__title--check">Посещенные <br> достопримечательности:</h1>
+            <label class="user-form__checkbox-text  user-form__checkbox-text--width-mod">
+              <input type="checkbox" name="Мост Длявола" class="user-form__square-checkbox" checked>Мост Длявола
+            </label>
+            <label class="user-form__checkbox-text  user-form__checkbox-text--width-mod">
+              <input type="checkbox" name="Гора-Колокол" class="user-form__square-checkbox" checked>Гора-Колокол
+            </label>
+            <label class="user-form__checkbox-text  user-form__checkbox-text--width-mod">
+              <input type="checkbox" name="Слайд-парк" class="user-form__square-checkbox" checked>Слайд-парк
+            </label>
+            <label class="user-form__checkbox-text  user-form__checkbox-text--width-mod">
+              <input type="checkbox" name="Красные скалы" class="user-form__square-checkbox">Красные скалы
+            </label>
+            <div class="user-form__border"></div>
+          </div>
+          <div class="user-form__part">
+            <h1 class="user-form__title">Опишите свои эмоции:</h1>
+            <textarea name="user-form__emotions"  cols="30" rows="10" class="user-form__emotions" placeholder="Опишите подробно свои эмоции"></textarea>
+            <input type="submit" class="user-form__submit" value="Отправить отзыв">
+            <p class="user-form__required">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

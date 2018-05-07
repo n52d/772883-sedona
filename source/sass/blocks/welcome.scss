@@ -5,16 +5,32 @@
 
 .welcome__title {
   font-size: 18px;
-  padding: 42px 0 40px 0;
+  padding: 42px 0 36px 0;
 }
 
 .welcome__discription {
   font-size: 14px;
   color: $gray;
+  padding-bottom: 34px;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (min-width: $tablet-width) {
+  .welcome {
+    &:nth-child(1) {
+      flex-grow: 1;
+    }
+  }
+
+  .welcome__discription {
+    display: block;
+    margin: 0 auto;
+    max-width: 440px;
+  }
+
+  .welcome__title {
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+    max-width: 440px;
+  }
 }
