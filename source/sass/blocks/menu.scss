@@ -22,3 +22,48 @@
   height: 55px;
 }
 
+@media (min-width:$tablet-width) {
+  .menu {
+    background-color: #ffffff;
+  }
+  .menu__link {
+    color: #000000;
+    font-size: 14px;
+  }
+  .menu__item {
+    border: none;
+    position: relative;
+
+    &:nth-child(1) {
+      left: 15px;
+    }
+
+    &:nth-child(2) {
+      left: 67px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 250px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .menu__item {
+    &:nth-child(2) {
+      left: 35px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 280px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 10px;
+    }
+  }
+}
