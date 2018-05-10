@@ -1,0 +1,35 @@
+.footer-part {
+  text-align: center;
+  max-width: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-part__hashtag {
+  font-size: 21px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-part {
+    max-width: $tablet-width;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-part__hashtag {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-part {
+    max-width: $desktop-width;
+  }
+}

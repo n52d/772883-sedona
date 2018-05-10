@@ -5,9 +5,7 @@
 
 .welcome__title {
   font-size: 18px;
-  padding: 0 0 32px 0;
-  margin: 0;
-  margin-top: -14px;
+  padding: 42px 0 36px 0;
 }
 
 .welcome__discription {
@@ -22,30 +20,12 @@
       flex-grow: 1;
     }
   }
-
-  .welcome__discription {
+  .welcome__discription, .welcome__title {
     display: block;
     margin: 0 auto;
     max-width: 440px;
-    border: none;
-    padding-bottom: 70px;
   }
-
   .welcome__title {
     font-size: 30px;
-    display: block;
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 74px 0 34px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .welcome__title {
-    padding: 113px 0 38px 0;
-  }
-
-  .welcome__discription {
-    padding-bottom: 77px;
   }
 }
