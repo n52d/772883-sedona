@@ -17,7 +17,7 @@ p {
 }
 
 .recommends__discription {
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 .recommends__pic {
@@ -34,12 +34,17 @@ p {
 
 .recommends__item {
   display: flex;
+
+  &:last-child {
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .recommends {
     flex-grow: 1;
     display: flex;
+    margin: 62px 0 0 0;
   }
 
   .recommends__item {
@@ -47,6 +52,10 @@ p {
     flex-direction: column;
     align-items: center;
     flex-basis: 256px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   .recommends__text-block {
@@ -59,10 +68,15 @@ p {
     display: block;
     width: 190px;
     padding: 32px 0 29px 0;
+    font-size: 21px;
   }
 
   .recommends__pic {
     margin: 0;
+  }
+
+  .recommends__discription {
+    padding-bottom: 65px;
   }
 }
 

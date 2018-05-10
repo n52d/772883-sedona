@@ -5,7 +5,11 @@
 
 .interested__title {
   font-size: 18px;
-  padding: 33px 0 30px 0;
+  padding: 18px 0 15px 0;
+}
+
+.interested__br {
+  display: none;
 }
 
 .interested__br {
@@ -44,5 +48,14 @@
 
   .interested__br {
     display: inline;
+  }
+
+  .interested__title {
+    font-size: 30px;
+    padding: 33px 0 15px 0;
+  }
+
+  .interested__button {
+    margin: 45px auto 58px auto;
   }
 }

@@ -7,7 +7,7 @@
 
 .presentation__title {
   font-size: 18px;
-  margin: 39px 0 29px 0;
+  margin: 18px 0 29px 0;
 }
 
 .presentation__discription {
@@ -19,5 +19,7 @@
 @media (min-width: $tablet-width) {
   .presentation__title {
     font-size: 30px;
+    padding: 69px 0 36px 0;
+    margin: 0;
   }
 }

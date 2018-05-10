@@ -3,12 +3,22 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 648px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
+}
+
+.container__border {
+  border-top: 1px solid #e5e5e5;
+  width: 320px;
+  margin: 21px 0;
 }
 
 @media (min-width: $tablet-width) {
   .container {
     justify-content: flex-start;
+  }
+
+  .container__border {
+    display: none;
   }
 }
 
