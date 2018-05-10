@@ -1,6 +1,6 @@
 .top-nav__close {
   position: relative;
-  top:44px;
+  top: 44px;
   left: 277px;
   width: 23px;
   height: 22px;
@@ -12,6 +12,7 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
   .top-nav__close {
     display: none;
   }

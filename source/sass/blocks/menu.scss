@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+
 .menu__item {
   list-style-type: none;
   border-bottom: 1px solid #678fa8;
@@ -20,16 +21,37 @@
   justify-content: center;
   align-items: center;
   height: 55px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #94b9d2;
+  }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .menu {
     background-color: #ffffff;
   }
+
   .menu__link {
     color: #000000;
     font-size: 14px;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: #cacaca;
+    }
   }
+
   .menu__item {
     border: none;
     position: relative;
@@ -52,7 +74,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .menu__item {
     &:nth-child(2) {
       left: 35px;
